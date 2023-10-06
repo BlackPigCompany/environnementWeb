@@ -14,10 +14,7 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-
-        @media screen and (max-width: 450px) {
-          display: none;
-          }
+    
 
         a {
             color: white;
@@ -34,15 +31,8 @@
         
         
     }
-    #hamburger {
-        display: none;
-        font-size: 25px;
-        @media screen and (max-width: 450px) {
-            display: block;
-          }
-    }
+}
 
- }
 
 
 

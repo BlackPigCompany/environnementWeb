@@ -14,11 +14,6 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 450px) {
-  nav ul {
-    display: none;
-  }
-}
 nav ul a {
   color: white;
   text-decoration: none;
@@ -29,15 +24,6 @@ nav ul a:hover {
   color: rgb(55, 138, 247);
   border-bottom: 4px solid;
   transition: 0.3s;
-}
-nav #hamburger {
-  display: none;
-  font-size: 25px;
-}
-@media screen and (max-width: 450px) {
-  nav #hamburger {
-    display: block;
-  }
 }
 
 footer {
@@ -180,5 +166,4 @@ body {
   background-color: rgb(38, 41, 47);
   font-family: poppins;
   height: 100px;
-  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */
