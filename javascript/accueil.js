@@ -18,3 +18,4 @@ new Typewriter(animtxt, {
 .pauseFor(600)
 .deleteChars(26)
 .start();
+

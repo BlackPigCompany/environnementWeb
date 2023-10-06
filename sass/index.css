@@ -14,6 +14,11 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
 }
+@media screen and (max-width: 450px) {
+  nav ul {
+    display: none;
+  }
+}
 nav ul a {
   color: white;
   text-decoration: none;
@@ -24,6 +29,15 @@ nav ul a:hover {
   color: rgb(55, 138, 247);
   border-bottom: 4px solid;
   transition: 0.3s;
+}
+nav #hamburger {
+  display: none;
+  font-size: 25px;
+}
+@media screen and (max-width: 450px) {
+  nav #hamburger {
+    display: block;
+  }
 }
 
 footer {
@@ -137,6 +151,26 @@ span {
     transform: scale(2);
   }
 }
+.volet {
+  background-color: rgb(76, 137, 146);
+  width: 200px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  height: 100%;
+  right: -200px;
+}
+
+.volet-visible {
+  background-color: rgb(76, 137, 146);
+  width: 200px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  height: 100%;
+  right: 0px;
+}
+
 * {
   margin: 0;
   color: white;
@@ -146,4 +180,5 @@ body {
   background-color: rgb(38, 41, 47);
   font-family: poppins;
   height: 100px;
+  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */
