@@ -6,7 +6,6 @@
 @import'./page/index';
 @import './page/concept';
 @import './page/_metier.scss';
-@import'./component/volet';
 
 
 
@@ -15,14 +14,11 @@
     color: white;
     
 }
+
 body {
     background-color: $color2;
     font-family: poppins;
     height: 100px;
+    overflow-x: hidden;
 }
-
-
-
-
-
 

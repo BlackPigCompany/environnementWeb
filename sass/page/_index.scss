@@ -17,6 +17,11 @@ header {
     img {
         opacity: 0;
         transition: 3s;
+
+        @media  screen and (max-width:460px) {
+            width: 200px;
+            transition: none;
+        }
     }
     .imgOnLoad{
         opacity: 1;

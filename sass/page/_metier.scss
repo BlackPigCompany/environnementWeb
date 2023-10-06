@@ -2,6 +2,8 @@
 .main {
     height: 80vh;
     position: relative;
+
+
 }
 .definition {
     max-width: 600px;
@@ -23,15 +25,22 @@ span {
     left: 50%;
     transform: translateX(-50%);
 }
+
+#frontend {
+    display: block;
+    margin: 0 auto;
+}
+
 @keyframes clignotant {
    0% {
-    transform: scale(2);
+    transform: scale(2) translateY(0px);
+    
 
    }
    50%{
-    transform: scale(3);
+    transform: scale(4) translateY(10px);
    }
    100% {
-    transform: scale(2);
+    transform: scale(2) translateY(0px);
    }
 }

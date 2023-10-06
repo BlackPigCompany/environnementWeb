@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./sass/page/_metier.scss" />
     <link
       rel="shortcut icon"
       href="./asset/img/logo-ifosup.png"
@@ -21,6 +22,11 @@
   <body>
     <nav>
       <img src="./asset/img/logo-ifosup.png" alt="logo ifosup" width="30px" />
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
       <ul>
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="/Métier.html">Métier</a></li>
@@ -30,16 +36,24 @@
     </nav>
     <div class="container">
       <div class="main">
-        <h3>Découvrir le métier d'un <span>dévellopeur front-end</span></h3>
+        <h3>
+          Découvrir le métier d'un <span>dévellopeur front-end</span
+          ><br /><br /><i id="i" class="fa-solid fa-code"></i>
+        </h3>
+
         <div class="definition">
           Un développeur front-end est un professionnel de l'informatique
           spécialisé dans la conception, le développement et la maintenance de
           l'interface utilisateur d'un site web ou d'une application. Voici les
           principales responsabilités d'un développeur front-end :
         </div>
-        <div class="icon">
-          <i class="fa-solid fa-arrow-down"></i>
-        </div>
+
+        <img
+          src="./asset/img/front-end.png"
+          alt=""
+          id="frontend"
+          width="400px"
+        />
       </div>
 
       <h4>Conception et développement de l'interface utilisateur (UI)</h4>
@@ -87,5 +101,6 @@
       </div>
     </div>
     <script src="./javascript/concept.js"></script>
+    <script src="./javascript/nav.js"></script>
   </body>
 </html>

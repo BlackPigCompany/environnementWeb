@@ -2,7 +2,7 @@ const img = document.getElementById('img');
 img.addEventListener('load', ()=>{
     img.classList.add('imgOnLoad');
 });
-
+//-----------------------------------------------
 const animtxt = document.querySelector('span');
 console.log(animtxt);
 
@@ -18,4 +18,13 @@ new Typewriter(animtxt, {
 .pauseFor(600)
 .deleteChars(26)
 .start();
+
+//------------------------------------------------
+const burger = document.querySelector('.burger');
+const navlink = document.querySelector(' nav ul');
+
+burger.addEventListener('click',()=> {
+    navlink.classList.toggle('ul-active');
+})
+
 

@@ -2,6 +2,7 @@
 nav {
   background-color: rgb(68, 68, 79);
   padding: 15px;
+  height: 15px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
@@ -14,6 +15,22 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
 }
+@media screen and (max-width: 460px) {
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(68, 68, 79);
+    top: 30px;
+    right: 0;
+    transform: translateX(100%);
+    padding: 0;
+    z-index: 10;
+    transition: 0.7s ease;
+  }
+}
 nav ul a {
   color: white;
   text-decoration: none;
@@ -24,6 +41,35 @@ nav ul a:hover {
   color: rgb(55, 138, 247);
   border-bottom: 4px solid;
   transition: 0.3s;
+}
+nav .ul-active {
+  transform: translateX(0px);
+}
+nav .burger {
+  display: none;
+}
+@media screen and (max-width: 460px) {
+  nav .burger {
+    display: block;
+  }
+}
+nav .line1 {
+  width: 13px;
+  height: 2px;
+  margin: 3px;
+  background-color: #fff;
+}
+nav .line2 {
+  width: 13px;
+  height: 2px;
+  margin: 3px;
+  background-color: #fff;
+}
+nav .line3 {
+  width: 13px;
+  height: 2px;
+  margin: 3px;
+  background-color: #fff;
 }
 
 footer {
@@ -56,6 +102,12 @@ header p {
 header img {
   opacity: 0;
   transition: 3s;
+}
+@media screen and (max-width: 460px) {
+  header img {
+    width: 200px;
+    transition: none;
+  }
 }
 header .imgOnLoad {
   opacity: 1;
@@ -126,37 +178,22 @@ span {
   transform: translateX(-50%);
 }
 
+#frontend {
+  display: block;
+  margin: 0 auto;
+}
+
 @keyframes clignotant {
   0% {
-    transform: scale(2);
+    transform: scale(2) translateY(0px);
   }
   50% {
-    transform: scale(3);
+    transform: scale(4) translateY(10px);
   }
   100% {
-    transform: scale(2);
+    transform: scale(2) translateY(0px);
   }
 }
-.volet {
-  background-color: rgb(76, 137, 146);
-  width: 200px;
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  height: 100%;
-  right: -200px;
-}
-
-.volet-visible {
-  background-color: rgb(76, 137, 146);
-  width: 200px;
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  height: 100%;
-  right: 0px;
-}
-
 * {
   margin: 0;
   color: white;
@@ -166,4 +203,5 @@ body {
   background-color: rgb(38, 41, 47);
   font-family: poppins;
   height: 100px;
+  overflow-x: hidden;
 }/*# sourceMappingURL=index.css.map */
