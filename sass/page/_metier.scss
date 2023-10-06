@@ -1,0 +1,37 @@
+@import '../variables';
+.main {
+    height: 80vh;
+    position: relative;
+}
+.definition {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+span {
+    color: $color3;
+}
+.icon {
+    text-align: center;
+    animation-name: clignotant ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: scale(3);
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes clignotant {
+   0% {
+    transform: scale(2);
+
+   }
+   50%{
+    transform: scale(3);
+   }
+   100% {
+    transform: scale(2);
+   }
+}

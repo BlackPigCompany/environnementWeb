@@ -1,0 +1,16 @@
+@import '../_variables.scss';
+footer {
+    background-color: $colorNav;
+    padding: 10px;
+
+     ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+       
+        li {
+            padding: 5px;
+        }
+     }
+}

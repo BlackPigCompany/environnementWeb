@@ -1,0 +1,31 @@
+@import '../variables';
+
+ nav {
+    background-color: $colorNav;
+    padding: 15px;
+    margin-bottom: 100px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            font-weight: 600;
+
+            &:hover{
+                color: $color3;
+                border-bottom: 4px solid;
+                transition: 0.3s;
+            }
+        }
+       
+
+    }
+ }
+
