@@ -3,7 +3,6 @@ nav {
   background-color: rgb(68, 68, 79);
   padding: 15px;
   height: 15px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +78,15 @@ nav .line3 {
   height: 2px;
   margin: 3px;
   background-color: #fff;
+}
+nav .toggle .line1 {
+  transform: rotate(45deg) translateY(7px);
+}
+nav .toggle .line2 {
+  opacity: 0;
+}
+nav .toggle .line3 {
+  transform: rotate(-45deg) translateY(-7px);
 }
 
 footer {
@@ -158,6 +166,11 @@ h4 {
 h4:hover {
   background-color: gray;
 }
+@media screen and (max-width: 460px) {
+  h4:hover {
+    background-color: rgb(68, 68, 79);
+  }
+}
 
 .main {
   position: relative;
@@ -212,4 +225,8 @@ body {
   font-family: poppins;
   height: 100px;
   overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  margin-top: 50px;
 }/*# sourceMappingURL=index.css.map */
