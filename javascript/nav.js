@@ -13,4 +13,5 @@ burger.addEventListener('click',()=> {
 
 header.addEventListener('click', ()=> {
     navlink.classList.remove('ul-active');
+    burger.classList.toggle ('toggle');
 })

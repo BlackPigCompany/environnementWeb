@@ -22,7 +22,7 @@
             position: absolute;
             flex-direction: column;
             justify-content: space-evenly;
-            height: 100vh;
+            height: 100vh - 15px;
             width: 0%;
             background-color: $colorNav;
             top:0px;
@@ -74,18 +74,21 @@
         height: 2px;
         margin: 3px;
         background-color: #fff;
+        transition: 0.5s;
     }
     .line2 {
         width: 13px;
         height: 2px;
         margin: 3px;
         background-color: #fff;
+        transition: 0.5s;
     }
     .line3 {
         width: 13px;
         height: 2px;
         margin: 3px;
         background-color: #fff;
+        transition: 0.5s;
     }
 
     .toggle .line1{
@@ -94,6 +97,7 @@
     }
     .toggle .line2 {
         opacity: 0;
+        transition: 0.5s;
     }
     .toggle .line3 {
         transform: rotate(-45deg) translateY(-7px);

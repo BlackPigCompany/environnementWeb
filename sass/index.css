@@ -66,18 +66,21 @@ nav .line1 {
   height: 2px;
   margin: 3px;
   background-color: #fff;
+  transition: 0.5s;
 }
 nav .line2 {
   width: 13px;
   height: 2px;
   margin: 3px;
   background-color: #fff;
+  transition: 0.5s;
 }
 nav .line3 {
   width: 13px;
   height: 2px;
   margin: 3px;
   background-color: #fff;
+  transition: 0.5s;
 }
 nav .toggle .line1 {
   transform: rotate(45deg) translateY(7px);
@@ -85,6 +88,7 @@ nav .toggle .line1 {
 }
 nav .toggle .line2 {
   opacity: 0;
+  transition: 0.5s;
 }
 nav .toggle .line3 {
   transform: rotate(-45deg) translateY(-7px);
