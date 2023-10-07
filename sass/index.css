@@ -81,12 +81,14 @@ nav .line3 {
 }
 nav .toggle .line1 {
   transform: rotate(45deg) translateY(7px);
+  transition: 0.5s;
 }
 nav .toggle .line2 {
   opacity: 0;
 }
 nav .toggle .line3 {
   transform: rotate(-45deg) translateY(-7px);
+  transition: 0.5s;
 }
 
 footer {
