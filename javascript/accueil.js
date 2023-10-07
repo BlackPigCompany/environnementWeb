@@ -14,7 +14,7 @@ new Typewriter(animtxt, {
 .typeString('Salut !')
 .pauseFor(800)
 .deleteChars(7)
-.typeString('Bienvenue sur mon site web')
+.typeString('Explore le web ...')
 .pauseFor(600)
 .deleteChars(26)
 .start();
