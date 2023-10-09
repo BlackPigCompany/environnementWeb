@@ -9,8 +9,13 @@ nav {
   overflow: hidden;
   overflow-x: hidden;
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 11;
+}
+@media screen and (max-width: 460px) {
+  nav {
+    position: static;
+  }
 }
 nav ul {
   list-style: none;

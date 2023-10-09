@@ -8,11 +8,15 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    overflow-x: hidden;
+    overflow-x: hidden;   
     position: sticky;
-    top:0px;
+    top: 0;
     z-index: 11;
 
+
+    @media screen and (max-width:460px){
+        position: static;
+    }
 
     ul {
         list-style: none;
