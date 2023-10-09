@@ -21,9 +21,9 @@ nav ul {
     position: absolute;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgba(68, 68, 79, 0.9);
+    background-color: rgba(68, 68, 79, 0.97);
     -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     height: 80vh;
     width: 0%;
     top: 45px;
