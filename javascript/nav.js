@@ -1,6 +1,7 @@
 const burger = document.querySelector('.burger');
 const navlink = document.querySelector(' nav ul');
 const header = document.querySelector('header');
+const container = document.querySelector('.container');
 
 
 
@@ -11,7 +12,16 @@ burger.addEventListener('click',()=> {
 
 })
 
-header.addEventListener('click', ()=> {
+if(header) {
+
+    header.addEventListener('click', ()=> {
+        navlink.classList.remove('ul-active');
+        burger.classList.remove ('toggle');
+    });
+};
+
+container.addEventListener('click', ()=> {
     navlink.classList.remove('ul-active');
     burger.classList.remove ('toggle');
 })
+console.log(container);
