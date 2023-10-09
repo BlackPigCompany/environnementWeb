@@ -17,7 +17,7 @@ new Typewriter(animtxt, {
 .typeString('Explore le web ...')
 .pauseFor(800)
 .deleteChars(26)
-.typeString('Par Janssens Hadrien')
+.typeString('Janssens Hadrien')
 .pauseFor(800)
 .deleteChars(26)
 .start();
