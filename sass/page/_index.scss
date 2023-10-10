@@ -16,8 +16,6 @@ header {
         padding: 40px;
     }
     img {
-        opacity: 0;
-        transition: 3s;
 
         @media  screen and (max-width:460px) {
             width: 50%;
