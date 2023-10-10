@@ -24,4 +24,3 @@ container.addEventListener('click', ()=> {
     navlink.classList.remove('ul-active');
     burger.classList.remove ('toggle');
 })
-console.log(container);

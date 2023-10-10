@@ -48,6 +48,22 @@ h4 {
     margin-bottom: 50px;
 }
 
+#react {
+    animation-name: reactRotat;
+    font-size: 80px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes reactRotat{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 
 

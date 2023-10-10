@@ -8,4 +8,11 @@ for (let i = 0; i < concepts.length; i++) {
         infos[i].classList.toggle('card-visible')
     });
 }
+const animtxt = document.querySelector('.cursor');
+
+new Typewriter(animtxt, {
+ loop: true,
+ deleteSpeed: 20
+ 
+})
 
