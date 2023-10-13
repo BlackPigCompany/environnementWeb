@@ -38,7 +38,7 @@
             right: 0;
             padding: 0;
             z-index: 10;
-            transition: 0.7s ease;
+            transition: 0.2s ease;
 
 
             a {
@@ -57,7 +57,7 @@
             &:hover{
                 color: $color3;
                 border-bottom: 4px solid;
-                transition: 0.3s;
+                transition: 0.2s;
             }
         }  
     }
@@ -84,34 +84,34 @@
         height: 2px;
         margin: 3px;
         background-color: #fff;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .line2 {
         width: 13px;
         height: 2px;
         margin: 3px;
         background-color: #fff;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .line3 {
         width: 13px;
         height: 2px;
         margin: 3px;
         background-color: #fff;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .toggle .line1{
         transform: rotate(45deg) translateY(7px);
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .toggle .line2 {
         opacity: 0;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .toggle .line3 {
         transform: rotate(-45deg) translateY(-7px);
-        transition: 0.5s;
+        transition: 0.3s;
     }
    
 }
