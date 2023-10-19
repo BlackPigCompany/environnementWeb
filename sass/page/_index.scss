@@ -3,10 +3,27 @@
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
+    @media screen and (max-width:950px) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+     
+    }
+    h1 {
+        @media screen and (max-width:950px) {
+           font-size: 20px;
+         
+        }
+    }
     
     
     p{
@@ -14,6 +31,7 @@ header {
         max-width: 400px;
         margin: 0 auto;
         padding: 40px;
+        color: black;
     }
     img {
 
@@ -25,4 +43,74 @@ header {
     .imgOnLoad{
         opacity: 1;
     }
+}
+#vague {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: -30;
+}
+#img {
+    transform: translateY(100px);
+    @media screen and (max-width:950px) {
+        width: 200px;
+      
+     }
+}
+#video {
+    position: absolute;
+    width: 340px;
+    height: 220px;
+    transform: translate(80px, -310px);
+    overflow: hidden;
+    @media screen and (max-width:950px) {
+        width: 140px;
+        height: 87px;
+        transform: translate(30px, -66px);
+     
+    }
+}
+video {
+    width: 115%;
+    
+}
+.dessin {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    @media screen and (max-width:950px) {
+        width: 200px;
+      display: none;
+     }
+}
+#cercle {
+    width: 10%;
+}
+#ligne1 {
+    position: absolute;
+    width: 50%;
+}
+#cercle-de-ligne {
+    position: absolute;
+    width: 3%;
+    transform: translate(1600% , 100%);
+}
+#star1 {
+    position: absolute;
+    transform: translate(700% , 100%);
+    width: 10%;
+}
+.main {
+    max-height: 100vh;
+    overflow: hidden;
+}
+.responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    
+
 }
